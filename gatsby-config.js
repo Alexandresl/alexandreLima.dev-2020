@@ -11,7 +11,6 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-        ls,
       },
     },
     `gatsby-transformer-sharp`,
