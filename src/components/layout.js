@@ -1,8 +1,16 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Brand from "./brand"
 
 const Layout = ({ children }) => {
-  return <main>{children}</main>
+  return (
+    <>
+      <nav>
+        <Brand />
+      </nav>
+      <main>{children}</main>
+    </>
+  )
 }
 
 Layout.propTypes = {
