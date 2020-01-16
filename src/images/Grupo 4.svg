@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="262" height="260" viewBox="0 0 262 260">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.812" y1="0.906" x2="0.143" y2="0.178" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#465881"/>
+      <stop offset="0.234" stop-color="#3b4a6d"/>
+      <stop offset="1" stop-color="#879ccc"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_4" data-name="Grupo 4" transform="translate(0 -2)">
+    <rect id="Retângulo_5" data-name="Retângulo 5" width="261" height="260" rx="130" transform="translate(0 2)" fill="url(#linear-gradient)"/>
+    <g id="Grupo_2" data-name="Grupo 2" transform="translate(-224 -27.453)">
+      <text id="_a_" data-name="(a)" transform="translate(229 222.453)" fill="rgba(7,30,77,0.31)" font-size="184" font-family="FiraCode-Regular, Fira Code" letter-spacing="-0.202em"><tspan x="0" y="0">(a)</tspan></text>
+    </g>
+    <g id="Grupo_3" data-name="Grupo 3" transform="translate(-227 -30.453)">
+      <text id="_a_2" data-name="(a)" transform="translate(229 222.453)" fill="#f5f5f5" font-size="184" font-family="FiraCode-Regular, Fira Code" letter-spacing="-0.202em"><tspan x="0" y="0">(a)</tspan></text>
+    </g>
+  </g>
+</svg>
