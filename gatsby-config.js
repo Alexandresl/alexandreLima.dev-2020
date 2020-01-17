@@ -5,10 +5,7 @@ module.exports = {
     author: `alexandreLima.dev()`,
   },
   plugins: [
-<<<<<<< HEAD
     `gatsby-plugin-styled-components`,
-=======
->>>>>>> b76acd58fc13c162ad069bbbe43f1aca95cf8692
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
