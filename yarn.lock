@@ -9,7 +9,6 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-<<<<<<< HEAD
 "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -17,8 +16,6 @@
   dependencies:
     "@babel/highlight" "^7.8.3"
 
-=======
->>>>>>> b76acd58fc13c162ad069bbbe43f1aca95cf8692
 "@babel/core@^7.7.5":
   version "7.7.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.7.5.tgz#ae1323cd035b5160293307f50647e83f8ba62f7e"
@@ -49,7 +46,6 @@
     lodash "^4.17.13"
     source-map "^0.5.0"
 
-<<<<<<< HEAD
 "@babel/generator@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.8.3.tgz#0e22c005b0a94c1c74eafe19ef78ce53a4d45c03"
@@ -67,8 +63,6 @@
   dependencies:
     "@babel/types" "^7.8.3"
 
-=======
->>>>>>> b76acd58fc13c162ad069bbbe43f1aca95cf8692
 "@babel/helper-annotate-as-pure@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-annotate-as-pure/-/helper-annotate-as-pure-7.7.4.tgz#bb3faf1e74b74bd547e867e48f551fa6b098b6ce"
@@ -147,7 +141,6 @@
     "@babel/template" "^7.7.4"
     "@babel/types" "^7.7.4"
 
-<<<<<<< HEAD
 "@babel/helper-function-name@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-function-name/-/helper-function-name-7.8.3.tgz#eeeb665a01b1f11068e9fb86ad56a1cb1a824cca"
@@ -157,8 +150,6 @@
     "@babel/template" "^7.8.3"
     "@babel/types" "^7.8.3"
 
-=======
->>>>>>> b76acd58fc13c162ad069bbbe43f1aca95cf8692
 "@babel/helper-get-function-arity@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.7.4.tgz#cb46348d2f8808e632f0ab048172130e636005f0"
@@ -166,7 +157,6 @@
   dependencies:
     "@babel/types" "^7.7.4"
 
-<<<<<<< HEAD
 "@babel/helper-get-function-arity@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/helper-get-function-arity/-/helper-get-function-arity-7.8.3.tgz#b894b947bd004381ce63ea1db9f08547e920abd5"
@@ -174,8 +164,6 @@
   dependencies:
     "@babel/types" "^7.8.3"
 
-=======
->>>>>>> b76acd58fc13c162ad069bbbe43f1aca95cf8692
 "@babel/helper-hoist-variables@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/helper-hoist-variables/-/helper-hoist-variables-7.7.4.tgz#612384e3d823fdfaaf9fce31550fe5d4db0f3d12"
