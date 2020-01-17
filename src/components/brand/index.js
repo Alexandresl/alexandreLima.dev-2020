@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Avatar from "../Avatar"
 
 const Brand = () => {
   const {
@@ -20,6 +21,7 @@ const Brand = () => {
 
   return (
     <div className="Brand-Wrapper">
+      <Avatar />
       <h1>{title}</h1>
       <h2>{description}</h2>
       <p>{author}</p>
