@@ -2,17 +2,17 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Avatar from "../Avatar"
 
+import * as S from "./styled"
+
 const Brand = () => {
   const {
     site: {
-      siteMetadata: { title, description, author },
+      siteMetadata: { author },
     },
   } = useStaticQuery(graphql`
     query MySiteMetadata {
       site {
         siteMetadata {
-          title
-          description
           author
         }
       }
@@ -20,12 +20,12 @@ const Brand = () => {
   `)
 
   return (
-    <div className="Brand-Wrapper">
-      <Avatar />
-      <h1>{title}</h1>
-      <h2>{description}</h2>
-      <p>{author}</p>
-    </div>
+    <S.BrandWrapper>
+      <S.BrandLInk>
+        <Avatar />
+        <p>{author}</p>
+      </S.BrandLInk>
+    </S.BrandWrapper>
   )
 }
 

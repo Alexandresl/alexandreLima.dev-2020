@@ -1,30 +1,19 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Brand from "../brand"
 
-import styled from "styled-components"
+import * as S from "./styled"
 import GlobalStyles from "../../styles/global"
-
-const LayoutWrapper = styled.section`
-  display: block;
-`
-
-const LayoutMain = styled.main`
-  background: #465881;
-  min-height: 100vh;
-  padding: 0;
-  width: 100%;
-`
+import Nav from "../Nav"
 
 const Layout = ({ children }) => {
   return (
-    <LayoutWrapper>
+    <S.LayoutWrapper>
       <GlobalStyles />
       <nav>
-        <Brand />
+        <Nav />
       </nav>
-      <LayoutMain>{children}</LayoutMain>
-    </LayoutWrapper>
+      <S.LayoutMain>{children}</S.LayoutMain>
+    </S.LayoutWrapper>
   )
 }
 
