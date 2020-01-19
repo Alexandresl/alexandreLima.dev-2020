@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import Sidebar from "react-sidebar";
 import NavLinks from "../NavLinks/navlinks";
 import Logo from "../Logo/logo";
-import { Hamburger } from "../icons";
+import { Hamburger } from "../Icons/icons";
 
 import "../../style/navbar.less";
 

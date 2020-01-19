@@ -1,5 +1,5 @@
 import React from "react";
-import SectionTitle from "../components/sectiontitle";
+import SectionTitle from "../components/Sectiontitle/sectiontitle";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 

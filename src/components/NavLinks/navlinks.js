@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Link from "../link";
+import Link from "../Link/link";
 import { Location } from "@reach/router";
-import { Sun, Moon } from "../icons";
+import { Sun, Moon } from "../Icons/icons";
 
 function ListItem(props) {
     const data = props.data;

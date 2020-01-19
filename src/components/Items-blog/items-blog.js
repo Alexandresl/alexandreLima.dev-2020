@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-import Date from "./Date/date";
-import { Calendar } from "./icons";
+import Date from "../Date/date";
+import { Calendar } from "../Icons/icons";
 import "../style/list-blog.less";
 
 class BlogItem extends React.Component {
