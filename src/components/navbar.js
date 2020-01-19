@@ -13,6 +13,7 @@ function SidebarContents() {
             <div className="logo">
                 <Link to="/">
                     <Logo />
+                    yarn
                 </Link>
             </div>
             <div className="links text-secondary">

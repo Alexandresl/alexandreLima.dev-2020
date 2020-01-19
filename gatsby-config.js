@@ -52,6 +52,7 @@ let siteMetadata = {
 module.exports = {
     siteMetadata: siteMetadata,
     plugins: [
+        `gatsby-plugin-styled-components`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
