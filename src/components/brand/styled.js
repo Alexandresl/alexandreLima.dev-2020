@@ -1,16 +1,16 @@
 import styled from "styled-components"
-import { Link } from "gatsby"
 
-export const BrandWrapper = styled.section`
-  background-color: #1b2a49;
+export const Brand = styled.section`
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-`
-export const BrandLInk = styled(Link)`
+  justify-content: center;
+  padding: 0 10px;
+  font-size: 16px;
   color: #00909e;
+  text-shadow: 1px 1px #0c2b33;
+`
 
-  &:hover {
-    color: orange;
-  }
+export const BrandLogo = styled.a`
+  height: 100%;
 `

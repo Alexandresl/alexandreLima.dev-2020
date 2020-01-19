@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Avatar from "../Avatar"
 
+import Avatar from "../Avatar"
 import * as S from "./styled"
 
 const Brand = () => {
@@ -20,12 +20,12 @@ const Brand = () => {
   `)
 
   return (
-    <S.BrandWrapper>
-      <S.BrandLInk>
+    <S.BrandLogo href="#!" className="left">
+      <S.Brand>
         <Avatar />
-        <p>{author}</p>
-      </S.BrandLInk>
-    </S.BrandWrapper>
+        <div class="author">{author}</div>
+      </S.Brand>
+    </S.BrandLogo>
   )
 }
 

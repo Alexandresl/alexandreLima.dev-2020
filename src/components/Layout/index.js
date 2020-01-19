@@ -9,9 +9,9 @@ const Layout = ({ children }) => {
   return (
     <S.LayoutWrapper>
       <GlobalStyles />
-      <nav>
+      <div class="navbar-fixed">
         <Nav />
-      </nav>
+      </div>
       <S.LayoutMain>{children}</S.LayoutMain>
     </S.LayoutWrapper>
   )
