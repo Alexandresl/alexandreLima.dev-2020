@@ -1,10 +1,10 @@
 let siteMetadata = {
-    title: `Elemental`,
+    title: `Alexandre Lima - Desenvolvedor Web e Mobile`,
     capitalizeTitleOnHome: true,
-    logo: `/images/logo.png`,
+    logo: `/images/profile-photo.jpg`,
     icon: `/images/icon.png`,
     titleImage: `/images/wall.jpg`,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
+    introTag: `DESENVOLVEDOR WEB E MOBILE`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     author: `@_akzhy`,
     blogItemsPerPage: 10,
@@ -27,10 +27,6 @@ let siteMetadata = {
         {
             name: "PORTFOLIO",
             url: "/portfolio"
-        },
-        {
-            name: "CONTACT",
-            url: "/contact"
         }
     ],
     footerLinks: [
@@ -41,28 +37,6 @@ let siteMetadata = {
         {
             name: "GitHub",
             url: "https://github.com/akzhy/gatsby-starter-elemental"
-        }
-    ],
-    social: [
-        {
-            name: "Facebook",
-            icon: "/images/Facebook.svg",
-            url: "#"
-        },
-        {
-            name: "Twitter",
-            icon: "/images/Twitter.svg",
-            url: "#"
-        },
-        {
-            name: "Instagram",
-            icon: "/images/Instagram.svg",
-            url: "#"
-        },
-        {
-            name: "Youtube",
-            icon: "/images/Youtube.svg",
-            url: "#"
         }
     ],
     contact: {
