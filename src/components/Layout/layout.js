@@ -1,7 +1,7 @@
 import React from "react";
-import Head from "./head";
-import Navbar from "./navbar";
-import Footer from "./footer";
+import Head from "../head";
+import Navbar from "../Navbar/navbar";
+import Footer from "../Footer/footer";
 
 const Layout = ({ placeholder, children }) => {
     return (

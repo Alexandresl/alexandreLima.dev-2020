@@ -1,10 +1,10 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import Layout from "../components/layout";
-import LatestPosts from "../components/blogposts-latest";
+import Layout from "../components/Layout/layout";
+import LatestPosts from "../components/Blogposts-latest/blogposts-latest";
 import SEO from "../components/seo";
-import Date from "../components/date";
+import Date from "../components/Date/date";
 import "../style/blog-singlepage.less";
 
 export default function({ data }) {

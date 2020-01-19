@@ -1,6 +1,6 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Link from "./link";
+import React from "./node_modules/react";
+import { useStaticQuery, graphql } from "./node_modules/gatsby";
+import Link from "../link";
 
 function ListItem(props) {
     const data = props.data;

@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
-import Date from "../components/date";
+import Date from "../components/Date/date";
 import { Row, Col } from "../components/page-components/grid";
 import MD from "gatsby-custom-md";
 import "../style/portfolio-singlepage.less";

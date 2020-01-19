@@ -10,12 +10,12 @@ nav {
 	z-index: 99;
 	transition: height .25s;
 
-	#menu-open{
+	#menu-open {
 		position: absolute;
 		left: 5%;
 		display: none;
 
-		.icon{
+		.icon {
 			width: 32px;
 			height: 32px;
 		}
@@ -54,7 +54,7 @@ nav {
 					height: 36px;
 					left: 50%;
 					top: 50%;
-					transform: translate(-50%,-50%) scale(0);
+					transform: translate(-50%, -50%) scale(0);
 					border-radius: 50%;
 					opacity: 0.2;
 					transition: transform 0.25s;
@@ -63,7 +63,7 @@ nav {
 				&.active:before,
 				&:focus:before,
 				&:hover:before {
-					transform: translate(-50%,-50%) scale(1);
+					transform: translate(-50%, -50%) scale(1);
 				}
 
 				span {
@@ -72,27 +72,27 @@ nav {
 				}
 			}
 
-			&.switch-theme{
+			&.switch-theme {
 
-				svg{
+				svg {
 					width: 24px;
 					height: 24px;
 				}
 
-				.switch-button{
+				.switch-button {
 					width: 24px;
 					height: 24px;
 					position: relative;
 					overflow: hidden;
 
-					div{
+					div {
 						position: absolute;
-						transform: scale(0,0);
+						transform: scale(0, 0);
 						transition: transform .35s;
 						cursor: pointer;
 
-						&.active{
-							transform: scale(1,1);
+						&.active {
+							transform: scale(1, 1);
 						}
 					}
 				}
@@ -101,12 +101,12 @@ nav {
 	}
 }
 
-.sidebar-content{
+.sidebar-content {
 	padding: 22px;
 	min-width: 45%;
 	max-width: 75%;
 
-	.sidebar-contents{
+	.sidebar-contents {
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -114,68 +114,52 @@ nav {
 		justify-content: space-between;
 		align-items: center;
 
-		.switch-theme{
+		.switch-theme {
 			display: inline-block;
 
-			svg{
+			svg {
 				width: 24px;
 				height: 24px;
 			}
 
-			.switch-button{
+			.switch-button {
 				width: 24px;
 				height: 24px;
 				position: relative;
 				overflow: hidden;
 
-				div{
+				div {
 					position: absolute;
-					transform: scale(0,0);
+					transform: scale(0, 0);
 					transition: transform .35s;
 					cursor: pointer;
 
-					&.active{
-						transform: scale(1,1);
+					&.active {
+						transform: scale(1, 1);
 					}
 				}
 			}
 		}
 
-		.logo{
+		.logo {
 			flex: 0 0 auto;
 
-			img{
-				width: 22px;
+			img {
+				width: 30px;
 			}
 		}
 
-		.links{
+		.links {
 			flex: 1 1 auto;
 			padding: 20px 0;
 			display: flex;
 			align-items: center;
 
-			ul{
+			ul {
 				list-style: none;
 
-				li{
+				li {
 					margin: 20px 0;
-				}
-			}
-		}
-
-		.social-links{
-			ul{
-				list-style: none;
-
-				li{
-					display: inline-block;
-					width: 40px;
-					margin: 5px;
-
-					img{
-						width: 100%;
-					}
 				}
 			}
 		}
@@ -184,7 +168,7 @@ nav {
 
 
 @media only screen and (max-width: 800px) {
-  	nav{
+	nav {
 		justify-content: center;
 
 		img {
@@ -199,11 +183,11 @@ nav {
 			}
 		}
 
-		ul{
+		ul {
 			display: none;
 		}
 
-		#menu-open{
+		#menu-open {
 			display: block;
 		}
 	}

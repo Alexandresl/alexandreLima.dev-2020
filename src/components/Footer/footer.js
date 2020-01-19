@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Logo from "./logo";
-import Navlinks from "./navlinks";
-import FooterLinks from "./footer-links";
-import "../style/footer.less";
+import Logo from "../Logo/logo";
+import Navlinks from "../NavLinks/navlinks";
+import FooterLinks from "../Footer-links/footer-links";
+import "../../style/footer.less";
 
 export default function() {
     const query = useStaticQuery(graphql`

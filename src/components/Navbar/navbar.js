@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 import Sidebar from "react-sidebar";
-import NavLinks from "./navlinks";
-import Logo from "./logo";
-import { Hamburger } from "./icons";
+import NavLinks from "../NavLinks/navlinks";
+import Logo from "../Logo/logo";
+import { Hamburger } from "../icons";
 
-import "../style/navbar.less";
+import "../../style/navbar.less";
 
 function SidebarContents() {
     return (
@@ -13,7 +13,6 @@ function SidebarContents() {
             <div className="logo">
                 <Link to="/">
                     <Logo />
-                    yarn
                 </Link>
             </div>
             <div className="links text-secondary">

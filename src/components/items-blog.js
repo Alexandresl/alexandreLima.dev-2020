@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-import Date from "./date";
+import Date from "./Date/date";
 import { Calendar } from "./icons";
 import "../style/list-blog.less";
 

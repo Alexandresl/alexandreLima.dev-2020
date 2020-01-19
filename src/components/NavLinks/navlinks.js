@@ -1,8 +1,8 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Link from "./link";
+import Link from "../link";
 import { Location } from "@reach/router";
-import { Sun, Moon } from "./icons";
+import { Sun, Moon } from "../icons";
 
 function ListItem(props) {
     const data = props.data;
@@ -48,11 +48,16 @@ class ThemeSwitchButton extends React.Component {
 
         document.body.className = _this.state.darkMode ? "dark-mode" : "";
         if (darkMode) {
-            this.setState({
-                darkMode: (darkMode === "true")
-            }, () => {
-                document.body.className = _this.state.darkMode ? "dark-mode" : "";
-            })
+            this.setState(
+                {
+                    darkMode: darkMode === "true"
+                },
+                () => {
+                    document.body.className = _this.state.darkMode
+                        ? "dark-mode"
+                        : "";
+                }
+            );
         }
 
         this.switchBtn.addEventListener("click", function() {
@@ -60,7 +65,7 @@ class ThemeSwitchButton extends React.Component {
                 darkMode: !_this.state.darkMode
             });
             localStorage.setItem("darkMode", _this.state.darkMode);
-            
+
             document.body.className = _this.state.darkMode ? "dark-mode" : "";
         });
     }
@@ -68,7 +73,10 @@ class ThemeSwitchButton extends React.Component {
         return (
             <React.Fragment>
                 <li className="switch-theme">
-                    <div className="switch-button" ref={c => (this.switchBtn = c)}>
+                    <div
+                        className="switch-button"
+                        ref={c => (this.switchBtn = c)}
+                    >
                         <div
                             title="Switch to Dark Mode"
                             data-switch-to="dark"

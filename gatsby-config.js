@@ -1,12 +1,12 @@
 let siteMetadata = {
     title: `Alexandre Lima - Desenvolvedor Web e Mobile`,
     capitalizeTitleOnHome: true,
-    logo: `/images/profile-photo.jpg`,
+    logo: `/images/profile.jpg`,
     icon: `/images/icon.png`,
     titleImage: `/images/wall.jpg`,
     introTag: `DESENVOLVEDOR WEB E MOBILE`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-    author: `@_akzhy`,
+    author: `Alexandre Lima`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
@@ -17,7 +17,7 @@ let siteMetadata = {
             url: "/"
         },
         {
-            name: "ABOUT",
+            name: "SOBRE MIM",
             url: "/about"
         },
         {

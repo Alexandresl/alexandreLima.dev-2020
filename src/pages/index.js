@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 
-import Layout from "../components/layout";
+import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import "../style/wall.less";
 
@@ -23,7 +23,7 @@ class IndexPage extends React.Component {
         return (
             <Layout placeholder={false}>
                 <SEO
-                    lang="en"
+                    lang="pt-BR"
                     title={this.props.data.site.siteMetadata.title}
                 />
                 <div
@@ -34,19 +34,19 @@ class IndexPage extends React.Component {
                         <div className="main-title text-primary">
                             <img
                                 className="logo"
-                                src={this.props.data.site.siteMetadata.logo}
+                                src={this.props.data.site.siteMetadata.icon}
                                 alt={this.props.data.site.siteMetadata.title}
                                 style={{ width: 60 + "px", height: 60 + "px" }}
                             />
                         </div>
                         <p className="tag-line text-secondary">
-                            {this.props.data.site.siteMetadata.introTag}
+                            {this.props.data.site.siteMetadata.author}
                         </p>
                         <p className="caption text-tertiary">
-                            {this.props.data.site.siteMetadata.description}
+                            {this.props.data.site.siteMetadata.introTag}
                         </p>
                         <a href="#portfolio" className="btn">
-                            SEE WORKS
+                            Meus Trabalhos
                         </a>
                     </div>
                 </div>
@@ -62,6 +62,8 @@ export const query = graphql`
         site {
             siteMetadata {
                 title
+                author
+                icon
                 logo
                 capitalizeTitleOnHome
                 titleImage
