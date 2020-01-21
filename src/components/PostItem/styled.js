@@ -13,7 +13,7 @@ export const PostItemLink = styled(Link)`
 
 export const PostWrapper = styled.section`
     align-items: center;
-    border-bottom: 1px solid #38444d;
+    border-bottom: 1px solid var(--textPrimary);
     display: flex;
     padding: 2rem 3rem;
     width: 100%;
@@ -23,7 +23,7 @@ export const PostItemTag = styled.div`
     align-items: center;
     background: ${props => props.background};
     border-radius: 50%;
-    color: #fff;
+    color: var(--textPrimary);
     display: flex;
     font-size: 1.3rem;
     font-weight: 700;

@@ -2,7 +2,6 @@ import React from "react";
 import Head from "../Head/head";
 import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
-import { GlobalStyles } from "../../style/global";
 
 import * as S from "./styled";
 
@@ -13,11 +12,7 @@ const Layout = ({ placeholder, children }) => {
             <Navbar
                 placeholder={placeholder === undefined ? true : placeholder}
             />
-
-            <S.Wrapper>
-                <GlobalStyles />
-                {children}
-            </S.Wrapper>
+            <S.Wrapper>{children}</S.Wrapper>
             <Footer />
         </React.Fragment>
     );

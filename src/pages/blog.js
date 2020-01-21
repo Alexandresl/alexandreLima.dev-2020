@@ -32,7 +32,6 @@ class IndexPage extends React.Component {
                     style={{ height: this.state.winHeight + "px" }}
                 >
                     <div className="container">
-                        <div className="section-title text-primary">Posts</div>
                         <PostItem />
                         <PostItem />
                         <PostItem />
