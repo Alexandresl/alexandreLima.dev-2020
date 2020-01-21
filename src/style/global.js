@@ -1,14 +1,18 @@
-@background: #fff;
-@textPrimary: #223364;
-@textSecondary: #3F5BBA;
-@textTertiary: #848EA8;
-@textNormal: #333;
-@colorPrimary: @textSecondary;
-@colorSecondary: #F55555;
-@colorError : #F55555;
-@colorSuccess : #4CAF50;
-@fontBold: 'Work Sans', sans-serif;
-@fontNormal: "Poppins", sans-serif;
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyles = createGlobalStyle`
+
+--background: #fff;
+--textPrimary: #223364;
+--textSecondary: #3F5BBA;
+--textTertiary: #848EA8;
+--textNormal: #333;
+--colorPrimary: var(--textSecondary);
+--colorSecondary: #F55555;
+--colorError : #F55555;
+--colorSuccess : #4CAF50;
+--fontBold: 'Work Sans', sans-serif;
+--fontNormal: "Poppins", sans-serif;
 
 .container {
 	min-width: 100%;
@@ -22,14 +26,14 @@
 
 
 body {
-	background: @background;
-	font-family: @fontNormal;
+	background: var(--background);
+	font-family: var(--fontNormal);
 	font-size: 18px;
-	color: @textNormal;
+	color: var(--textNormal);
 }
 
 nav {
-	background: @background;
+	background: var(--background);
 
 	&:after {
 		content: "";
@@ -38,7 +42,7 @@ nav {
 		left: 0;
 		width: 100%;
 		height: 2px;
-		background: linear-gradient(to left, @colorPrimary, @colorSecondary);
+		background: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary));
 		opacity: 0;
 		transition: opacity .35s;
 	}
@@ -52,7 +56,7 @@ nav {
 
 	&,
 	& a {
-		color: @textSecondary;
+		color: var(--textSecondary);
 	}
 }
 
@@ -60,7 +64,7 @@ nav {
 
 	&,
 	& a {
-		color: @textTertiary;
+		color: var(--textTertiary);
 	}
 }
 
@@ -68,16 +72,16 @@ nav {
 
 	&,
 	& a {
-		color: @textPrimary;
+		color: var(--textPrimary);
 	}
 }
 
 .color-primary {
-	color: @colorPrimary;
+	color: var(--colorPrimary);
 }
 
 .color-secondary {
-	color: @colorSecondary;
+	color: var(--colorSecondary);
 }
 
 .res-message {
@@ -87,20 +91,20 @@ nav {
 
 .res-message,
 .color-success {
-	color: @colorSuccess;
+	color: var(--colorSuccess);
 }
 
 .color-error {
-	color: @colorError;
+	color: var(--colorError);
 }
 
 .wall svg text {
 	font: bold 10px sans-serif;
-	font-family: @fontBold;
+	font-family: var(--fontBold);
 }
 
 #menu-open path {
-	fill: @textSecondary;
+	fill: var(--textSecondary);
 }
 
 .font-bold,
@@ -110,7 +114,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: @fontBold;
+	font-family: var(--fontBold);
 }
 
 .btn {
@@ -120,7 +124,7 @@ h6 {
 	letter-spacing: 1px;
 	margin: 25px 0;
 	padding: 0 45px !important;
-	background-image: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
+	background-image: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary)) !important;
 	color: #fff !important;
 	border: none !important;
 
@@ -143,7 +147,7 @@ h6 {
 	position: absolute;
 	width: 100%;
 	height: 5px;
-	background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
+	background: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary)) !important;
 	bottom: -4px;
 	left: 0;
 }
@@ -165,7 +169,7 @@ section {
 
 		text {
 			font: bold 8px sans-serif;
-			font-family: @fontBold;
+			font-family: var(--fontBold);
 		}
 	}
 }
@@ -179,8 +183,8 @@ section {
 .field-box {
 	width: 100%;
 	font-size: 20px;
-	background: @background;
-	color: @textNormal;
+	background: var(--background);
+	color: var(--textNormal);
 	position: relative;
 	z-index: 2;
 	outline: 0;
@@ -203,27 +207,27 @@ section {
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
+		background: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary)) !important;
 		border-radius: 5px;
 	}
 }
 
 footer {
-	background: darken(@background, 4%);
+	background: darken(var(--background), 4%);
 }
 
 nav ul li a:before {
-	background: @colorSecondary;
+	background: var(--colorSecondary);
 }
 
 .sidebar-content {
-	background: @background;
+	background: var(--background);
 }
 
 .pagination ul li {
 
 	a {
-		background: @colorPrimary;
+		background: var(--colorPrimary);
 		color: #fff;
 
 		svg path {
@@ -233,7 +237,7 @@ nav ul li a:before {
 
 	&.active {
 		a {
-			background: linear-gradient(to left, @colorPrimary, @colorSecondary);
+			background: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary));
 		}
 	}
 }
@@ -242,7 +246,7 @@ nav ul li a:before {
 
 	&,
 	& path {
-		fill: @colorPrimary;
+		fill: var(--colorPrimary);
 	}
 }
 
@@ -250,41 +254,41 @@ nav ul li a:before {
 
 	&,
 	& path {
-		fill: @textSecondary;
+		fill: var(--textSecondary);
 	}
 }
 
 .blog-post blockquote {
-	border-left: 3px solid @colorSecondary;
+	border-left: 3px solid var(--colorSecondary);
 }
 
 
 .dark-mode {
-	@background: #171B27;
-	@textPrimary: #c5c5c5;
-	@textSecondary: #3F5BBA;
-	@textTertiary: #848EA8;
-	@textNormal: #b8b7bf;
-	@colorPrimary: @textSecondary;
-	@colorSecondary: #F55555;
-	@colorError : #F55555;
-	@colorSuccess : #4CAF50;
+	--background: #171B27;
+	--textPrimary: #c5c5c5;
+	--textSecondary: #3F5BBA;
+	--textTertiary: #848EA8;
+	--textNormal: #b8b7bf;
+	--colorPrimary: var(--textSecondary);
+	--colorSecondary: #F55555;
+	--colorError: #F55555;
+	--colorSuccess: #4CAF50;
 
 
 	& {
-		background: @background;
-		color: @textNormal;
+		background: var(--background);
+		color: var(--textNormal);
 	}
 
 	nav {
-		background: @background;
+		background: var(--background);
 	}
 
 	.text-secondary {
 
 		&,
 		& a {
-			color: @textSecondary;
+			color: var(--textSecondary);
 		}
 	}
 
@@ -292,7 +296,7 @@ nav ul li a:before {
 
 		&,
 		& a {
-			color: @textTertiary;
+			color: var(--textTertiary);
 		}
 	}
 
@@ -300,54 +304,54 @@ nav ul li a:before {
 
 		&,
 		& a {
-			color: @textPrimary;
+			color: var(--textPrimary);
 		}
 	}
 
 	.color-primary {
-		color: @colorPrimary;
+		color: var(--colorPrimary);
 	}
 
 	.color-secondary {
-		color: @colorSecondary;
+		color: var(--colorSecondary);
 	}
 
 	.res-message,
 	.color-success {
-		color: @colorSuccess;
+		color: var(--colorSuccess);
 	}
 
 	.color-error {
-		color: @colorError;
+		color: var(--colorError);
 	}
 
 	.field-box {
-		background: @background;
-		color: @textNormal;
+		background: var(--background);
+		color: var(--textNormal);
 	}
 
 	footer {
-		background: darken(@background, 4%);
+		background: darken(var(--background), 4%);
 	}
 
 	nav ul li a:before {
-		background: @colorSecondary;
+		background: var(--colorSecondary);
 	}
 
 	.btn {
-		background-image: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
+		background-image: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary)) !important;
 	}
 
 	.pseudo-divider:after {
-		background: linear-gradient(to left, @colorPrimary, @colorSecondary) !important;
+		background: linear-gradient(to left, var(--colorPrimary), var(--colorSecondary)) !important;
 	}
 
 	.sidebar-content {
-		background: @background;
+		background: var(--background);
 	}
 
 	#menu-open path {
-		fill: @textSecondary;
+		fill: var(--textSecondary);
 	}
 
 }
@@ -379,3 +383,4 @@ div[role="navigation"] {
 	text-align: left;
 
 }
+`;

@@ -4,7 +4,6 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import "../style/wall.less";
-import "../style/theme.less";
 
 class IndexPage extends React.Component {
     constructor(props) {

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import "../../style/theme.less";
 
 export const Logo = styled.img`
     border-radius: 50%;
