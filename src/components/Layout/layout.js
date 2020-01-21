@@ -3,6 +3,8 @@ import Head from "../Head/head";
 import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
 
+import * as S from "./styled";
+
 const Layout = ({ placeholder, children }) => {
     return (
         <React.Fragment>
@@ -10,7 +12,7 @@ const Layout = ({ placeholder, children }) => {
             <Navbar
                 placeholder={placeholder === undefined ? true : placeholder}
             />
-            <div className="wrapper">{children}</div>
+            <S.Wrapper>{children}</S.Wrapper>
             <Footer />
         </React.Fragment>
     );

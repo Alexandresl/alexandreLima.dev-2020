@@ -3,7 +3,8 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
-import "../style/wall.less";
+import PostItem from "../components/PostItem";
+import "../style/blog.less";
 
 class IndexPage extends React.Component {
     constructor(props) {
@@ -27,27 +28,21 @@ class IndexPage extends React.Component {
                     title={this.props.data.site.siteMetadata.title}
                 />
                 <div
-                    className="wall"
+                    className="blog"
                     style={{ height: this.state.winHeight + "px" }}
                 >
-                    <div className="intro container">
-                        <div className="main-title text-primary">
-                            <img
-                                className="logo"
-                                src={this.props.data.site.siteMetadata.icon}
-                                alt={this.props.data.site.siteMetadata.title}
-                                style={{ width: 60 + "px", height: 60 + "px" }}
-                            />
-                        </div>
-                        <p className="tag-line text-secondary">
-                            {this.props.data.site.siteMetadata.author}
-                        </p>
-                        <p className="caption text-tertiary">
-                            {this.props.data.site.siteMetadata.introTag}
-                        </p>
-                        <a href="#portfolio" className="btn">
-                            Blog
-                        </a>
+                    <div className="container">
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
+                        <PostItem />
                     </div>
                 </div>
             </Layout>
