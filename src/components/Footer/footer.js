@@ -1,9 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import Logo from "../Logo/logo";
-import Navlinks from "../NavLinks/navlinks";
 import FooterLinks from "../Footer-links/footer-links";
 import "../../style/footer.less";
+import NavlinksFooter from "../NavlinksFooter/navlinksFooter";
 
 export default function() {
     const query = useStaticQuery(graphql`
@@ -25,7 +25,7 @@ export default function() {
                     </Link>
                 </div>
                 <div className="navlinks text-secondary">
-                    <Navlinks />
+                    <NavlinksFooter />
                 </div>
                 <div
                     className="navlinks text-secondary"

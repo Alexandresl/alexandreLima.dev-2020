@@ -128,6 +128,5 @@ export default function() {
             />
         );
     }
-
     return <ul className="navbar-links">{list}</ul>;
 }

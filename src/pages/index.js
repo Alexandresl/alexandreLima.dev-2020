@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
+import SocialLInks from "../components/SocialLinks/index";
 import "../style/wall.less";
 
 class IndexPage extends React.Component {
@@ -45,6 +46,7 @@ class IndexPage extends React.Component {
                         <p className="caption text-tertiary">
                             {this.props.data.site.siteMetadata.introTag}
                         </p>
+                        <SocialLInks></SocialLInks>
                         <a href="#portfolio" className="btn">
                             Meus Trabalhos
                         </a>

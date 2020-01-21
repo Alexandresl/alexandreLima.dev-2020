@@ -5,7 +5,9 @@ import NavLinks from "../NavLinks/navlinks";
 import Logo from "../Logo/logo";
 import { Hamburger } from "../Icons/icons";
 
+import * as S from "./styled";
 import "../../style/navbar.less";
+import SocialLInks from "../SocialLinks";
 
 function SidebarContents() {
     return (
@@ -15,6 +17,9 @@ function SidebarContents() {
                     <Logo />
                 </Link>
             </div>
+            <S.SocialNetworks>
+                <SocialLInks />
+            </S.SocialNetworks>
             <div className="links text-secondary">
                 <NavLinks />
             </div>
