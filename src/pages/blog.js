@@ -32,17 +32,15 @@ class IndexPage extends React.Component {
                     style={{ height: this.state.winHeight + "px" }}
                 >
                     <div className="container">
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
-                        <PostItem />
+                        <PostItem
+                            slug="/about/"
+                            background="#7aab13"
+                            category="MISC"
+                            date="21 de Dezembro de 2019"
+                            timeToRead="1"
+                            title="Em breve..."
+                            description="Do que trata este blog?"
+                        />
                     </div>
                 </div>
             </Layout>
