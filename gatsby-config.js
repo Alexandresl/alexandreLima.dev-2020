@@ -55,22 +55,21 @@ module.exports = {
         {
             resolve: `gatsby-transformer-remark`,
             options: {
-                plugins: [
-                    "gatsby-remark-copy-linked-files",
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 1280
-                        }
-                    }
-                ]
+                plugins: []
             }
         },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `contents`,
-                path: `${__dirname}/contents/`
+                name: `posts`,
+                path: `${__dirname}/posts/`
+            }
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `images`,
+                path: `${__dirname}/src/images`
             }
         },
         {
