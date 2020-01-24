@@ -4,7 +4,6 @@ import { useStaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
 import SocialLInks from "../components/SocialLinks/index";
-import "../style/wall.less";
 
 const IndexPage = () => {
     const index = useStaticQuery(graphql`
@@ -26,7 +25,7 @@ const IndexPage = () => {
 
     return (
         <Layout placeholder={false}>
-            <SEO lang="pt-BR" title={`index.title`} />
+            <SEO lang="pt-BR" title={`Home`} />
             <div className="wall">
                 <div className="intro container">
                     <div className="main-title text-primary">
