@@ -3,7 +3,8 @@ import { graphql } from "gatsby";
 
 import Layout from "../components/Layout/layout";
 import SEO from "../components/seo";
-import PostItem from "../components/PostItem";
+import PostItem from "../components/PostListItem";
+import PostCategory from "../components/PostCategory";
 
 import Pagination from "../components/Pagination";
 
@@ -23,6 +24,7 @@ const BlogList = props => {
             <SEO lang="pt-BR" title="Blog" />
             <div className="blog">
                 <div className="container">
+                    <PostCategory />
                     {postList.map(
                         ({
                             node: {
