@@ -8,7 +8,7 @@ export const categories = styled.h2`
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    padding: 0 15%;
+    padding: 0 2rem;
 `;
 
 export const CategoryWrapper = styled.div`
@@ -16,22 +16,36 @@ export const CategoryWrapper = styled.div`
     min-height: 50px;
     display: flex;
     justify-content: center;
+    padding: 1rem 0;
 `;
 
 export const CategoryList = styled.ul`
-    width: 80%;
+    width: 100%;
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
     list-style: none;
+    padding: 0 2rem;
 `;
 
 export const CategoryItem = styled.li`
-    min-width: 20%;
+    min-width: 5%;
     line-height: 40px;
+    text-align: center;
+    margin: 5px;
+    background: ${props => (props.background ? props.background : "#1fa1f2")};
+    border-radius: 5px;
+
     a {
+        display: block;
         color: #fff;
+        padding: 0 1rem;
+
+        &:hover {
+            background: #33333366;
+            border-radius: 5px;
+        }
     }
 `;
 

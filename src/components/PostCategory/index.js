@@ -9,32 +9,32 @@ const PostCategory = () => {
             <S.categories>Categorias</S.categories>
             <S.CategoryWrapper>
                 <S.CategoryList>
-                    <S.CategoryItem>
-                        <Link to="">CSS</Link>
+                    <S.CategoryItem background="#7d669e">
+                        <Link to="/">CSS</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">SVG</Link>
+                    <S.CategoryItem background="#7AAB13">
+                        <Link to="/">SVG</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">DEV</Link>
+                    <S.CategoryItem background="#d6ba32">
+                        <Link to="/">DEV</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">JS</Link>
+                    <S.CategoryItem background="#61728f">
+                        <Link to="/">JS</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">MISC</Link>
+                    <S.CategoryItem background="#24809e">
+                        <Link to="/">MISC</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">CSS</Link>
+                    <S.CategoryItem background="#47650b">
+                        <Link to="/">NODEJS</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">SVG</Link>
+                    <S.CategoryItem background="#7AAB13">
+                        <Link to="/">SVG</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">DEV</Link>
+                    <S.CategoryItem background="#b31917">
+                        <Link to="/">JAVASCRIPT</Link>
                     </S.CategoryItem>
-                    <S.CategoryItem>
-                        <Link to="">JS</Link>
+                    <S.CategoryItem background="#7d669e">
+                        <Link to="/">JS</Link>
                     </S.CategoryItem>
                 </S.CategoryList>
             </S.CategoryWrapper>
