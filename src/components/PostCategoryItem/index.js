@@ -4,12 +4,14 @@ import { Link } from "gatsby";
 import * as S from "./styled";
 
 const PostCategoryItem = props => {
+    const category = props.category;
+    const background = props.background;
     return (
         <>
-            <S.CategoryItem background="#7d669e">
-                <Link to="/">MISC</Link>
+            <S.CategoryItem background={background}>
+                <Link to="/">{category}</Link>
             </S.CategoryItem>
-            <S.CategoryItem background="#7AAB13">
+            {/* <S.CategoryItem background="#7AAB13">
                 <Link to="/">JAVASCRIPT</Link>
             </S.CategoryItem>
             <S.CategoryItem background="#d6ba32">
@@ -35,7 +37,7 @@ const PostCategoryItem = props => {
             </S.CategoryItem>
             <S.CategoryItem background="#d6ba32">
                 <Link to="/">SVG</Link>
-            </S.CategoryItem>
+            </S.CategoryItem> */}
         </>
     );
 };

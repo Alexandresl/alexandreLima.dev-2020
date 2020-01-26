@@ -8,7 +8,7 @@ export const categories = styled.h2`
     font-size: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
-    padding: 0 2rem;
+    padding: 1rem 2rem 0;
 `;
 
 export const CategoryWrapper = styled.div`
@@ -16,7 +16,7 @@ export const CategoryWrapper = styled.div`
     min-height: 50px;
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 `;
 
 export const CategoryList = styled.ul`
@@ -31,12 +31,12 @@ export const CategoryList = styled.ul`
 
 export const Separator = styled.div`
     width: 100%;
-    height: 1px;
+    height: 2px;
     display: block;
-    background: rgb(63, 91, 186);
+
     background: linear-gradient(
         to left,
-        rgba(63, 91, 186, 0.2) 0%,
-        rgba(245, 85, 85, 0.2) 35%
+        rgba(63, 91, 186, 0.3) 0%,
+        rgba(245, 85, 85, 0.3) 90%
     );
 `;
