@@ -24,7 +24,6 @@ const BlogList = props => {
             <SEO lang="pt-BR" title="Blog" />
             <div className="blog">
                 <div className="container">
-                    <PostCategory />
                     {postList.map(
                         ({
                             node: {
@@ -54,6 +53,7 @@ const BlogList = props => {
                     )}
                 </div>
             </div>
+            <PostCategory />
             <Pagination
                 isFirst={isFirst}
                 isLast={isLast}
