@@ -3,6 +3,7 @@ let siteMetadata = {
     capitalizeTitleOnHome: true,
     logo: `/images/profile.jpg`,
     icon: `/images/icon.png`,
+    searchIcon: `/images/search-icon.svg`,
     titleImage: `/images/wall.jpg`,
     introTag: `DESENVOLVEDOR WEB E MOBILE`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,

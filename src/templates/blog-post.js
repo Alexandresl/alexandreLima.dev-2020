@@ -35,7 +35,7 @@ const BlogPost = ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-    query Post($slug: String!) {
+    query BlogPost($slug: String!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
             fields {
                 slug

@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Link from "../Link/link";
 import { Location } from "@reach/router";
 import { Sun, Moon } from "../Icons/icons";
+import SearchIcon from "../SearchIcon";
 
 function ListItem(props) {
     const data = props.data;
@@ -120,6 +121,8 @@ export default function() {
         list.push(<ListItem key={e.url + "-" + i} data={e} />);
     });
 
+    list.push(<SearchIcon key="search" />);
+
     if (data.site.siteMetadata.switchTheme) {
         list.push(
             <ThemeSwitchButton
@@ -128,5 +131,6 @@ export default function() {
             />
         );
     }
+
     return <ul className="navbar-links">{list}</ul>;
 }

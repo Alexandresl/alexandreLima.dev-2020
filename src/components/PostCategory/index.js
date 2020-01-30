@@ -29,16 +29,23 @@ const PostCategory = () => {
             <S.CategoryWrapper>
                 <S.CategoryList>
                     {categoryList.map(
-                        ({
-                            edges: [
-                                {
-                                    node: {
-                                        frontmatter: { background, category }
+                        (
+                            {
+                                edges: [
+                                    {
+                                        node: {
+                                            frontmatter: {
+                                                background,
+                                                category
+                                            }
+                                        }
                                     }
-                                }
-                            ]
-                        }) => (
+                                ]
+                            },
+                            i
+                        ) => (
                             <PostCategoryItem
+                                key={category}
                                 category={category}
                                 background={background}
                             />
