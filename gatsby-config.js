@@ -1,3 +1,7 @@
+require("dotenv").config()
+
+const queries = require('./src/utils/algolia_queries')
+
 let siteMetadata = {
     title: `Alexandre Lima - Desenvolvedor Web e Mobile`,
     capitalizeTitleOnHome: true,
@@ -52,6 +56,17 @@ module.exports = {
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
+        {
+            resolve: `gatsby-plugin-algolia-search`,
+            options: {
+              appId: process.env.ALGOLIA_APP_ID,
+              apiKey: process.env.ALGOLIA_ADMIN_KEY,
+              indexName: process.env.ALGOLIA_INDEX_NAME,
+              queries,
+              chunkSize: 10000,
+              enablePartialUpdates: true,
+            },
+          },
         `gatsby-plugin-react-helmet`,
         {
             resolve: `gatsby-transformer-remark`,
