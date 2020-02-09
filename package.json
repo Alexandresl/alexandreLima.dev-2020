@@ -4,6 +4,7 @@
 	"version": "0.1.0",
 	"author": "Akshay <hi@akzhy.com>",
 	"dependencies": {
+		"algoliasearch": "^4.0.2",
 		"dotenv": "^8.2.0",
 		"gatsby": "^2.10.4",
 		"gatsby-custom-md": "^1.0.2",
@@ -32,6 +33,7 @@
 		"react-disqus-comments": "^1.4.0",
 		"react-dom": "^16.8.6",
 		"react-helmet": "^5.2.1",
+		"react-instantsearch-dom": "^6.3.0",
 		"react-sidebar": "^3.0.2",
 		"styled-components": "^5.0.0",
 		"styled-icons": "^9.2.0"
