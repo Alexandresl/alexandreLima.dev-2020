@@ -35,6 +35,7 @@ export const SearchWrapper = styled.section`
     font-size: 1.6rem;
     padding: 0.5rem;
     width: 100%;
+    border-radius: 0;
     &::placeholder {
       color: #8899a6;
     }
