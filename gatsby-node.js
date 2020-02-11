@@ -42,7 +42,6 @@ exports.createPages = ({ graphql, actions }) => {
                             description
                             title
                             category
-                            background
                         }
                         timeToRead
                     }
@@ -66,6 +65,10 @@ exports.createPages = ({ graphql, actions }) => {
             }
         }
     `).then(result => {
+
+        if (result.errors) {
+            throw result.errors
+        }
         const posts = result.data.allMarkdownRemark.edges;
 
         posts.forEach(({ node, next, previous }) => {

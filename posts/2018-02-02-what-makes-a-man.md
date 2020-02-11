@@ -10,7 +10,7 @@ Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus ege
 
 Pellentesque sed sapien lorem, at lacinia urna. In hac habitasse platea dictumst. Vivamus vel justo in leo laoreet ullamcorper non vitae lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ullamcorper rutrum.
 
-```jsx
+```js
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Link from "../Link/link";
