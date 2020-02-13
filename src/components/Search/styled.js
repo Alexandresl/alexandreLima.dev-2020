@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 export const SearchWrapper = styled.section`
   display: flex;
   flex-direction: column;
@@ -46,3 +48,4 @@ export const SearchWrapper = styled.section`
     display: none;
   }
 `;
+

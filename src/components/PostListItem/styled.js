@@ -5,13 +5,11 @@ export const PostItemLink = styled(Link)`
     color: #8899a6;
     display: flex;
     text-decoration: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #33333399;
+    
 
     &:hover {
         color: #1fa1f2;
-    }
-    &:last-child {
-        border: none;
     }
 `;
 

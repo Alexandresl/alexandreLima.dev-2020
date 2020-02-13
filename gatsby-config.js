@@ -10,7 +10,7 @@ let siteMetadata = {
     searchIcon: `/images/search-icon.svg`,
     titleImage: `/images/wall.jpg`,
     introTag: `DESENVOLVEDOR WEB E MOBILE`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+    description: `Neste site irei escrever sobre programação web e mobile, além de mostrar meu portfolio`,
     author: `Alexandre Lima`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -42,11 +42,11 @@ let siteMetadata = {
     ],
     contact: {
         /* Leave the below value completely empty (no space either) if you don't want a contact form. */
-        api_url: "./test.json",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation"
+        api_url: "",
+        description: ``,
+        mail: "",
+        phone: "",
+        address: ""
     }
 };
 
