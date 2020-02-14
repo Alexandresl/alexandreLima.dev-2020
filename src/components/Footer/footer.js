@@ -21,10 +21,8 @@ export default function() {
         <footer className="footer">
             <div className="container">
                 <div className="logo">
-                    <AniLink to="/" title={query.site.siteMetadata.title} cover
-                        direction="down"
-                        duration={1}
-                        bg="var(--background)">
+                    <AniLink to="/" title={query.site.siteMetadata.title} 
+                    fade>
                         <Logo />
                     </AniLink>
                 </div>

@@ -17,10 +17,7 @@ function SidebarContents() {
       <div className="logo">
         <AniLink
           to="/"
-          cover
-          direction="down"
-          duration={1}
-          bg="var(--background)"
+          fade
         >
           <Logo />
         </AniLink>

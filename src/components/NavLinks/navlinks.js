@@ -17,10 +17,7 @@ function ListItem(props) {
                 return (
                     <li>
                         <AniLink
-                            cover
-                            direction="down"
-                            duration={1}
-                            bg="var(--background)"
+                            fade
                             to={data.url}
                             {...anchorAttrs}
                             className={

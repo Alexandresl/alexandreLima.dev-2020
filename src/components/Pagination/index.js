@@ -13,10 +13,7 @@ const Pagination = ({
     nextPage
 }) => (
     <S.PaginationWrapper>
-        {!isFirst && <AniLink to={prevPage} cover
-            direction="down"
-            duration={1} 
-            bg="var(--background)" >&larr; Página anterior</AniLink>}
+        {!isFirst && <AniLink to={prevPage} fade >&larr; Página anterior</AniLink>}
 
         <p>
             {currentPage} de {numPages}

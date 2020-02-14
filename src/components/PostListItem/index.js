@@ -14,10 +14,7 @@ const PostItem = ({
 }) => (
     <S.PostItemLink 
         to={slug} 
-        cover
-        direction="down"
-        duration={1}
-        bg="var(--background)"
+        fade
     >
         <S.PostWrapper>
             <S.PostItemTag background={background}>{category}</S.PostItemTag>
