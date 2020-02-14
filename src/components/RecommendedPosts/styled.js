@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Anilink from 'gatsby-plugin-transition-link/Anilink'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export const RecommendedWrapper = styled.section`
     border-bottom: 1px solid #38444d;
@@ -16,7 +16,7 @@ export const RecommendedBox = styled.div`
     width: 50%;
 `;
 
-export const RecommendedLink = styled(Anilink)`
+export const RecommendedLink = styled(AniLink)`
     color: #1fa1f2;
     display: flex;
     padding: 3rem;

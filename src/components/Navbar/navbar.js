@@ -1,5 +1,5 @@
 import React from "react";
-import Anilink from "gatsby-plugin-transition-link/Anilink";
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Sidebar from "react-sidebar";
 import NavLinks from "../NavLinks/navlinks";
 import Logo from "../Logo/logo";
@@ -15,7 +15,7 @@ function SidebarContents() {
   return (
     <div className="sidebar-contents">
       <div className="logo">
-        <Anilink
+        <AniLink
           to="/"
           cover
           direction="down"
@@ -23,7 +23,7 @@ function SidebarContents() {
           bg="var(--background)"
         >
           <Logo />
-        </Anilink>
+        </AniLink>
       </div>
       <S.SocialNetworks>
         <SocialLInks />
@@ -125,7 +125,7 @@ class Navbar extends React.Component {
               <Hamburger />
             </span>
           </a>
-          <Anilink
+          <AniLink
             to="/"
             cover
             direction="down"
@@ -133,7 +133,7 @@ class Navbar extends React.Component {
             bg="var(--background)"
           >
             <Logo />
-          </Anilink>
+          </AniLink>
           <NavLinks />
         </nav>
         {placeholder && (
