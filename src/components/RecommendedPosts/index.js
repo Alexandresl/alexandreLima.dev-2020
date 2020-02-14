@@ -6,10 +6,7 @@ const RecommendedPosts = ({ next, previous }) => (
     <S.RecommendedWrapper>
         {previous && (
             <S.RecommendedLink to={previous.fields.slug} className="previous" 
-            cover
-            direction="down"
-            duration={1}
-            bg="var(--background)"
+            fade
             >
                 {previous.frontmatter.title}
             </S.RecommendedLink>
@@ -17,10 +14,7 @@ const RecommendedPosts = ({ next, previous }) => (
         {!previous && <S.RecommendedBox />}
         {next && (
             <S.RecommendedLink to={next.fields.slug} className="next"
-            cover
-            direction="down"
-            duration={1}
-            bg="var(--background)"
+            fade
             >
                 {next.frontmatter.title}
             </S.RecommendedLink>

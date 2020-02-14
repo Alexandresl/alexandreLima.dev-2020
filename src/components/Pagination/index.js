@@ -22,10 +22,7 @@ const Pagination = ({
             {currentPage} de {numPages}
         </p>
 
-        {!isLast && <AniLink to={nextPage} cover
-            direction="down"
-            duration={1}
-            bg="var(--background)" >Próxima página &rarr;</AniLink>}
+        {!isLast && <AniLink to={nextPage} fade >Próxima página &rarr;</AniLink>}
     </S.PaginationWrapper>
 );
 

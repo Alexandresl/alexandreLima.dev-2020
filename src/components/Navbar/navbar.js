@@ -126,10 +126,7 @@ class Navbar extends React.Component {
           </a>
           <AniLink
             to="/"
-            cover
-            direction="down"
-            duration={1}
-            bg="var(--background)"
+            fade
           >
             <Logo />
           </AniLink>
