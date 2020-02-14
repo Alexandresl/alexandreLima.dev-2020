@@ -10,7 +10,7 @@ export const CategoryItem = styled.li`
 
     a {
         display: block;
-        color: #fff;
+        color: var(--textPrimary);
         padding: 0 1rem;
 
         &:hover {

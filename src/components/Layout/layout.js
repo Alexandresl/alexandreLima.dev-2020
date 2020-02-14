@@ -4,10 +4,12 @@ import Navbar from "../Navbar/navbar";
 import Footer from "../Footer/footer";
 
 import * as S from "./styled";
+import GlobalStyles from '../styles/global'
 
 const Layout = ({ placeholder, children }) => {
     return (
         <React.Fragment>
+            <GlobalStyles />
             <Head />
             <Navbar
                 placeholder={placeholder === undefined ? true : placeholder}

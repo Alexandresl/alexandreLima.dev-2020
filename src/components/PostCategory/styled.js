@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const categories = styled.h2`
     display: block;
     width: 100%;
-    color: #3f5bba;
+    color: var(--textSecondary);
     text-align: left;
     font-size: 20px;
     font-family: "Poppins", sans-serif;

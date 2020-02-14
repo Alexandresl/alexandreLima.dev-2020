@@ -51,7 +51,7 @@ export const Loading = function() {
         <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 38 38"
-            stroke="#fff"
+            stroke="var(--textPrimary)"
         >
             <g fill="none" fillRule="evenodd">
                 <g transform="translate(1 1)" strokeWidth="2">

@@ -12,7 +12,7 @@ export const ListItemSearch = styled.li`
 
 export const ListItemLink = styled(Link)`
     img {
-        color: #3f5bba;
+        color: var(--textSecondary);
     }
     padding: 0;
     width: 100%;

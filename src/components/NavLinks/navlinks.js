@@ -47,17 +47,17 @@ class ThemeSwitchButton extends React.Component {
         const _this = this;
         let darkMode = localStorage.getItem("darkMode");
 
-        document.body.className = _this.state.darkMode ? "dark-mode" : "";
+        //document.body.className = _this.state.darkMode ? "dark-mode" : "";
         if (darkMode) {
             this.setState(
                 {
                     darkMode: darkMode === "true"
                 },
-                () => {
-                    document.body.className = _this.state.darkMode
-                        ? "dark-mode"
-                        : "";
-                }
+                // () => {
+                //     document.body.className = _this.state.darkMode
+                //         ? "dark-mode"
+                //         : "";
+                // }
             );
         }
 
@@ -67,7 +67,7 @@ class ThemeSwitchButton extends React.Component {
             });
             localStorage.setItem("darkMode", _this.state.darkMode);
 
-            document.body.className = _this.state.darkMode ? "dark-mode" : "";
+            // document.body.className = _this.state.darkMode ? "dark-mode" : "";
         });
     }
     render() {
@@ -79,14 +79,14 @@ class ThemeSwitchButton extends React.Component {
                         ref={c => (this.switchBtn = c)}
                     >
                         <div
-                            title="Switch to Dark Mode"
+                            title="Mude para o Dark Mode"
                             data-switch-to="dark"
                             className={!this.state.darkMode ? "active" : ""}
                         >
                             <Sun />
                         </div>
                         <div
-                            title="Switch to Light Mode"
+                            title="Mude para o Light Mode"
                             data-switch-to="light"
                             className={this.state.darkMode ? "active" : ""}
                         >
