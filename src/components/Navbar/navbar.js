@@ -96,8 +96,7 @@ class Navbar extends React.Component {
   render() {
     const placeholder = this.props.placeholder;
     return (
-      <React.Fragment>
-        <TransitionPortal level="top">
+          <TransitionPortal level="top">
         <Sidebar
           sidebar={<SidebarContents />}
           open={this.state.sidebarOpen}
@@ -144,8 +143,8 @@ class Navbar extends React.Component {
             }}
           ></div>
         )}
+      
         </TransitionPortal>
-      </React.Fragment>
     );
   }
 }
