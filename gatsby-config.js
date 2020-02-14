@@ -12,6 +12,7 @@ let siteMetadata = {
     introTag: `DESENVOLVEDOR WEB E MOBILE`,
     description: `Neste site irei escrever sobre programação web e mobile, além de mostrar meu portfolio`,
     author: `Alexandre Lima`,
+    siteUrl: `https://alexandrelima.dev/`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
@@ -53,6 +54,7 @@ let siteMetadata = {
 module.exports = {
     siteMetadata: siteMetadata,
     plugins: [
+        `gatsby-plugin-sitemap`,
         `gatsby-plugin-styled-components`,
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,

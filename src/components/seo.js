@@ -13,15 +13,21 @@ function SEO({ description, lang, meta, title, image }) {
                         description
                         author
                         logo
+                        siteUrl
                     }
                 }
             }
         `
-    );
+    )
+
+    
 
     const metaDescription = description || site.siteMetadata.description;
-    const ogImage = image || site.siteMetadata.logo;
-
+    
+    const url = site.siteMetadata.siteUrl
+    
+    const ogImage = `${url}${image || site.siteMetadata.logo}`;
+    
     return (
         <Helmet
             htmlAttributes={{
@@ -52,7 +58,11 @@ function SEO({ description, lang, meta, title, image }) {
                 },
                 {
                     name: `twitter:card`,
-                    content: `summary`
+                    content: `summary_large_image`
+                },
+                {
+                    name: `twitter:image:src`,
+                    content: ogImage
                 },
                 {
                     name: `twitter:creator`,
@@ -76,7 +86,7 @@ function SEO({ description, lang, meta, title, image }) {
 }
 
 SEO.defaultProps = {
-    lang: `en`,
+    lang: `pt-BR`,
     meta: [],
     description: ``
 };
