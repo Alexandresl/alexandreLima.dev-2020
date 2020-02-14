@@ -25,7 +25,7 @@ export const RecommendedLink = styled(Link)`
     width: 50%;
 
     &:hover {
-        background: #282a36;
+        background: var(--recommendedLink);
     }
 
     &.previous {

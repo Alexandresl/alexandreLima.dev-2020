@@ -13,6 +13,7 @@ const GlobalStyles = createGlobalStyle`
         --colorError : #F55555;
         --colorSuccess : #4CAF50;
         --footer : #0f121aff;
+        --recommendedLink: #282a36;
     }
 
     body.light {
@@ -26,6 +27,7 @@ const GlobalStyles = createGlobalStyle`
         --colorError : #F55555;
         --colorSuccess : #4CAF50;
         --footer : #f5f5f5ff;
+        --recommendedLink: #f5f5f5;
     }
 
 `;

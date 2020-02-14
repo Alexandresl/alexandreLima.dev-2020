@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 
 export const PostItemLink = styled(Link)`
-    color: #8899a6;
+    color: var(--textPrimary);
     display: flex;
     text-decoration: none;
     border-bottom: 1px solid #33333399;
