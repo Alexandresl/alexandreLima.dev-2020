@@ -115,6 +115,24 @@ module.exports = {
             }
         },
         {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+              name: `Alexandre Lima - Desenvolvedor Web`,
+              short_name: `(a)`,
+              start_url: `/`,
+              background_color: `#171B27`,
+              theme_color: `#171B27`,
+              display: `minimal-ui`,
+              icon: `src/images/icon.png`
+            },
+        },
+        {
+            resolve: `gatsby-plugin-offline`,
+            options: {
+              
+            },
+          },
+        {
             resolve: `gatsby-plugin-less`,
             options: {
                 strictMath: true

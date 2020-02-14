@@ -40,14 +40,8 @@ class IndexPage extends React.Component {
                             />
                         </div>
                         <p className="tag-line text-secondary">
-                            {this.props.data.site.siteMetadata.author}
+                            Em breve!
                         </p>
-                        <p className="caption text-tertiary">
-                            {this.props.data.site.siteMetadata.introTag}
-                        </p>
-                        <a href="#portfolio" className="btn">
-                            Portfolio
-                        </a>
                     </div>
                 </div>
             </Layout>
