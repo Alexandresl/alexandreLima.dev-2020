@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Link from "../Link/link";
+import Anilink from 'gatsby-plugin-transition-link/Anilink'
 import { Location } from "@reach/router";
 import { Sun, Moon } from "../Icons/icons";
 import SearchIcon from "../SearchIcon";
@@ -16,7 +16,11 @@ function ListItem(props) {
             {({ location }) => {
                 return (
                     <li>
-                        <Link
+                        <Anilink
+                            cover
+                            direction="down"
+                            duration={1}
+                            bg="var(--background)"
                             to={data.url}
                             {...anchorAttrs}
                             className={
@@ -27,7 +31,7 @@ function ListItem(props) {
                             }
                         >
                             <span>{data.name}</span>
-                        </Link>
+                        </Anilink>
                     </li>
                 );
             }}

@@ -173,9 +173,8 @@ export const MainContent = styled.section`
     .gatsby-highlight {
         background-color: #282a36;
         width: 100%;
-        border: 1px solid #21222c;
-        box-shadow: 0 0 2px var(--background) inset;
-        border-radius: 5px;
+        border-top: 1px solid #21222c;
+        border-bottom: 1px solid #21222c;
         margin-bottom: 20px;
 
         & > pre {

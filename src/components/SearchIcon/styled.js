@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "gatsby";
+import Anilink from 'gatsby-plugin-transition-link/Anilink'
 import { SearchAlt2 as Search } from "styled-icons/boxicons-regular/SearchAlt2";
 
 export const ListItemSearch = styled.li`
@@ -10,7 +10,7 @@ export const ListItemSearch = styled.li`
     text-align: center;
 `;
 
-export const ListItemLink = styled(Link)`
+export const ListItemLink = styled(Anilink)`
     img {
         color: var(--textSecondary);
     }

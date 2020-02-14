@@ -1,5 +1,6 @@
 import React from "react";
-import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
+import Anilink from 'gatsby-plugin-transition-link/Anilink'
 import Logo from "../Logo/logo";
 import NavlinksFooter from "../NavlinksFooter/navlinksFooter";
 import SocialLinks from "../SocialLinks";
@@ -20,9 +21,12 @@ export default function() {
         <footer className="footer">
             <div className="container">
                 <div className="logo">
-                    <Link to="/" title={query.site.siteMetadata.title}>
+                    <Anilink to="/" title={query.site.siteMetadata.title} cover
+                        direction="down"
+                        duration={1}
+                        bg="var(--background)">
                         <Logo />
-                    </Link>
+                    </Anilink>
                 </div>
                 <div className="navlinks text-secondary">
                     <NavlinksFooter />
